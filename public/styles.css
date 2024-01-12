@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("wallpaper.png");
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  margin: 0;
+  background-position: center;
+  overflow: hidden; /* Disable scrolling */
+}
+
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: crimson;
+  text-shadow: 2px 2px 2px white; /* Adjust the values to control the thickness and blur of the outline */
+}
+table {
+  border-collapse: collapse;
+  width: 20%;
+  height: 400px;
+  margin: 1px;
+  margin-left: 475px;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: center;
+  border-radius: 15px;
+}
+
+th {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+th, td {
+  border: 2px solid #000000;
+  padding: 10px;
+}
+
+th:first-child, td:first-child {
+  border-left: 2px solid #000000;
+}
+
+th:nth-child(3n), td:nth-child(3n) {
+  border-right: 2px solid #000000;
+}
+
+tr:nth-child(3n) td {
+  border-bottom: 2px solid #000000;
+}
+
+
+
+tr:first-child td {
+  border-top: 2px solid #000000; /* Add top border for the first row */
+}
+tr:first-child{
+    border-top: 10px solid crimson; 
+}
+
+/* Add borders for group separation */
+tr:nth-child(3n) {
+  border-bottom: 10px solid crimson; /* Add extra bottom border for every fourth row (creates a gap) */
+}
+
+/* Add vertical borders for group separation */
+td:nth-child(3n) {
+  border-right: 10px solid crimson; /* Add extra right border for every fourth column (creates a gap) */
+}
+
+td:first-child {
+    border-left: 10px solid crimson; /* Add extra right border for every fourth column (creates a gap) */
+  }
+
+  .buttons{
+    display: inline-flex;
+    margin-right: 400px;
+    }
+
+  .button-56 {
+    align-items: center;
+    margin-top: 10px;
+    background-color: crimson;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 45%;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-56:after {
+    background-color:#104f00;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .button-56:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  
+  .button-56:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }
+
+  
+input {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
